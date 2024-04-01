@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catarina Bengtsson Designer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700;9..40,1000&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <script defer src="navbar.js"></script> -->
+        <script defer src="about.js"></script>
+    </head>
+    <body class="about-me-body">
+        <nav id="navbar" class="navbar-small">
+            <div class="nav-inner">
+            <a href="index.html"><img src="images/logo_cb_white.png" alt="logo"></a>
+                <div class="nav-links small-text" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact-me">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <section style="margin-bottom: 100px;">
+            <div class="container">
+                <div class="about-me-container" id="parent">
+                    <div style="position: absolute; top: 00%; left: 0; height: auto; width: 40%; min-height: 700px; z-index: 1; display: grid; padding: auto;">
+                        <img src="images/IMG_9822-2.jpg" alt="" class="about-me-photo anchor move-right">
+                        <a href="doc/cv.pdf" target="_blank" class="about-me-btn small-text">Download CV</a>
+                    </div>
+                    <div class="about-me-background anchor move-left" id="child">
+                        <h1 style="text-align: center;">About me</h1>
+                        <img src="images/signatur.png" alt="" class="hidden" id="signature" style="max-width: 300px; max-height: 100%; position: absolute; bottom: 4%; left: 27%;">
+                    </div>
+                    <div class="about-me-text">
+                        <p>I am Catarina Bengtsson, a multidisciplinary creative from Gothenburg. I would describe myself as a passionate designer who strives to understand the user and develop innovative concepts and ideas through design theory.
+                            <br><br> I recently graduated from Malmö University with a bachelor's degree and a major in product design. My skills lie in UX/UI Design, web design, and graphic design. The reason I chose to study design is that I have always admired and wanted to understand the interaction between people and products, as well as the visual message conveyed through colors and shapes. I've always found it fascinating to observe people's subconscious behaviors when they engage with products. Understanding what influences a person's actions when they interact with a product intrigues me.
+                            During my studies, I collaborated on multiple design projects. Through these projects, I have gained a deep understanding of how to lead design projects using design theory, including processes such as user research, workshops, and prototypes.
+                            <br><br>My ambitions for my future work are to contribute with what I have already learned, but above all, to continue developing my skills and to embrace new tasks and challenges that drive me forward.
+                            Want to know more? Here's a cliffhanger for you: I once received a medal for apprehending burglars in the army...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer class="portfolio-page-footer small-text">
+        <div class="portfolio-page-footer-container">
+            <img src="images/logo_cb_white.png" alt="logo">
+            <div class="portfolio-page-footer-inner-container">
+                <a href="tel:+46766728955" style="margin-bottom: 10px;">
+                    <i class="fa fa-mobile">
+                        <span class="fa-text_p" style="margin-right: 10px; margin-left: 5px;">+46 766 728 955</span>
+                    </i>
+                </a>
+                <div class="icon-text">
+                    <i class="fa fa-map-marker fa-icons">
+                        <span class="fa-text_p" style="margin-right: 10px; margin-left: 5px;">Malmö, Sweden</span>
+                    </i>
+                </div>
+            </div>
+            <div class="portfolio-page-footer-inner-container">
+                <a href="mailto:bengtssoncatarina@gmail.com" style="margin-bottom: 10px;">
+                    <i class="fa fa-envelope">
+                        <span class="fa-text_p" style="margin-right: 10px; margin-left: 5px;">bengtssoncatarina@gmail.com</span>
+                    </i>
+                </a>
+                <a href="https://www.linkedin.com/in/bengtssoncatarina/"  target="_blank">
+                    <i class="fa fa-linkedin">
+                        <span class="fa-text_p" style="margin-left: 5px;">Catarina Bengtsson</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+        <span><i class="fa fa-copyright" style="margin: 50px 0 0 0;"></i> Catarina Bengtsson 2024</span>
+    </footer>
+</html>
