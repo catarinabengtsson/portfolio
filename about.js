@@ -17,17 +17,3 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
-
-// Add class and minimize navbar
-// window.onscroll = function() {
-//     console.log("kalle");
-//     minimize();
-// };
-
-// function minimize() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//         document.getElementById("navbar").classList.add('navbar-small');
-//     } else {
-//         document.getElementById("navbar").classList.remove('navbar-small');
-//     }
-// }

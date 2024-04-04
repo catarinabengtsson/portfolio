@@ -40,7 +40,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Minimize navbar
 window.onscroll = function() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
         document.getElementById("navBar").classList.add('navbar-small');
     } else {
         document.getElementById("navBar").classList.remove('navbar-small');
@@ -110,9 +110,9 @@ function buildThresholdList() {
 }
 
 // DEBUG
-console.log("Initial window.innerWidth ", window.innerWidth);
-console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
-window.onresize = function() {
-    console.log("onresize: window.innerWidth ", window.innerWidth);
-    console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
-};
+// console.log("Initial window.innerWidth ", window.innerWidth);
+// console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
+// window.onresize = function() {
+//     console.log("onresize: window.innerWidth ", window.innerWidth);
+//     console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
+// };
