@@ -256,7 +256,7 @@ img {
     height: 100vh;
     width: 100%;
     /* width: 1200px; */
-    background: linear-gradient(90deg, rgba(61, 46, 46, 0.5) 0%, rgba(61, 46, 46, 0.00) 68%), url("images/cattis_laughing_3.jpg");
+    background: linear-gradient(90deg, rgba(61, 46, 46, 0.5) 0%, rgba(61, 46, 46, 0.00) 68%), url("images/cb_big.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -280,7 +280,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     /* background-color: rgba(01, 01, 01, 0.25); */
-    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     position: fixed;
     z-index: 2;
@@ -318,6 +317,80 @@ nav .fa {
     align-items: center;
 }
 
+/* TMP */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
+    transition: 1s;
+}
+
+.topnav img {
+    width: 107px;
+    transition: 1s;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav .fa {
+    display: none;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+/*  .navbar-small */
+.active {
+    /* background-color: #04AA6D; */
+    height: 55px;
+    background-color: rgba(05, 05, 05, 0.45);
+    /* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); */
+    color: white;
+}
+
+.active img {
+    width: 50px;
+    aspect-ratio: auto;
+    transition: 1s;
+}
+
+/* END OF TMP */
 .nav-links {
     flex: 1;
     text-align: right;
@@ -407,18 +480,17 @@ nav .fa {
     color: #000;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .header {
         /* height: 100vh; */
         /* width: 100%; */
-        /* background: linear-gradient(90deg, rgba(61, 46, 46, 0.5) 0%, rgba(61, 46, 46, 0.00) 68%), url("images/cattis_laughing_3.jpg"); */
-        background: url("images/cattis_laughing_3_small4.jpg");
+        background: url("images/cb_small.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
     }
-    
+
     /* hr {
         height: 2px;
         width: 50%;
@@ -435,7 +507,7 @@ nav .fa {
         z-index: 2;
         transition: 0s;
     }
-    
+
     nav img {
         width: 70px;
         transition: 1s;
@@ -447,7 +519,8 @@ nav .fa {
 
     .nav-links {
         position: absolute;
-        background-color: rgba(05, 05, 05, 0.45);
+        /* background-color: rgba(05, 05, 05, 0.45); */
+        background-color: rgba(05, 05, 05, 0.75);
         height: 100vh;
         width: 200px;
         /* height: auto;
@@ -481,12 +554,12 @@ nav .fa {
         box-shadow: none;
         transition: 0s;
     }
-    
+
     .navbar-small img {
         width: 70px;
         transition: 0s;
     }
-    
+
     .textbox {
         width: 80%;
         position: inherit;
@@ -497,7 +570,7 @@ nav .fa {
     .textbox p {
         margin: 10px 0px 25px 0px;
     }
-    
+
     .textbox-60 {
         width: 60%;
         margin: auto;
@@ -544,7 +617,7 @@ nav .fa {
     align-items: center;
 }
 
-.skills-card h4{
+.skills-card h4 {
     font-weight: 600;
 }
 
@@ -554,7 +627,7 @@ nav .fa {
     margin-top: 50px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .row {
         flex-direction: column;
     }
@@ -661,7 +734,7 @@ nav .fa {
     position: absolute;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .portfolio-row {
         height: auto;
         border-radius: 0px;
@@ -699,10 +772,11 @@ nav .fa {
         display: flex;
         position: absolute;
     }
+
     .portfolio-text-footer p {
         margin: auto;
     }
-    
+
     .layer-small {
         background: transparent;
         height: auto;
@@ -754,7 +828,7 @@ nav .fa {
 
 @media (prefers-reduced-motion: no-preferences) {
     .hidden {
-      transition: none;
+        transition: none;
     }
 }
 
@@ -824,7 +898,7 @@ nav .fa {
     margin: auto;
     color: #fff;
     /* background-color: #013058; */
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     position: sticky;
     bottom: 0;
 }
@@ -869,7 +943,7 @@ nav .fa {
     margin-top: 50px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .footer-container {
         padding: 0;
     }
@@ -892,7 +966,10 @@ nav .fa {
     }
 }
 
-.fa-map-marker, .fa-mobile, .fa-envelope, .fa-linkedin {
+.fa-map-marker,
+.fa-mobile,
+.fa-envelope,
+.fa-linkedin {
     color: #fff;
     display: inline-flex;
 }
@@ -935,18 +1012,53 @@ nav .fa {
 .about-me-body {
     height: auto;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-color: cadetblue; */
+    background: linear-gradient(rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .about-me-container {
     margin: auto;
-    width: 80%;
-    height: 1000px;
+    width: 100%;
+    /* height: 1000px; */
+    height: auto;
     max-width: 1200px;
     display: flex;
     margin-top: 7%;
     align-items: flex-end;
     position: relative;
+}
+
+.about-me-text-container {
+    margin: auto;
+    padding: 0 0% 5% 0%;
+    width: 100%;
+    /* height: 1000px; */
+    height: auto;
+    max-width: 1200px;
+    display: grid;
+    /* margin-top: 7%; */
+    /* align-items: flex-end; */
+    position: relative;
+}
+
+.about-me-text-div {
+    margin-top: 30px;
+    display: flex;
+}
+
+.about-me-text-col {
+    width: 50%;
+    margin: 10px;
+    text-align: justify;
+}
+
+.about-me-text-col-left {
+    margin: 0 20px 0 10px;
+}
+
+.about-me-text-col-right {
+    margin: 0 10px 0 20px;
 }
 
 .about-me-photo {
@@ -968,6 +1080,12 @@ nav .fa {
     top: 0;
     right: 0;
     padding-top: 30px;
+}
+
+.about-me-h3 {
+    margin: 30px 10px 10px 10px;
+    position: relative;
+    text-align: left;
 }
 
 .about-me-text {
@@ -999,7 +1117,7 @@ nav .fa {
 
 .about-me-text::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .about-me-btn {
     width: 120px;
@@ -1049,7 +1167,188 @@ nav .fa {
     margin: auto;
 }
 
-@media(max-width: 768px) {
+.about-me-h1 {
+    font-size: 10.5rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.about-me-pic {
+    width: 300px;
+    aspect-ratio: auto;
+    transform: rotate(-15deg);
+    position: relative;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+}
+
+.about-me-button {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 12px 22px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+.about-me-button:hover {
+    border: 2px solid #fff;
+    background: #fff;
+    transition: 0.5s;
+    color: #463632;
+}
+
+.about-me-button-m {
+    visibility: hidden;
+}
+
+.about-me-button-m:hover {
+    border: 2px solid #fff;
+    background: #fff;
+    transition: 0.5s;
+    color: #463632;
+}
+
+@media (max-width: 1536px) {
+    .about-me-h1 {
+        font-size: 10.5rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-me-h1 {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .about-me-h1 {
+        font-size: 8.5rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .about-me-h1 {
+        font-size: 8rem;
+    }
+
+    .about-me-pic {
+        width: 250px;
+        aspect-ratio: auto;
+        /* transform: rotate(-15deg);
+        position: relative;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5); */
+    }
+}
+
+/* @media (max-width: 975px) {
+    .about-me-h1 {
+        font-size: 7rem;
+    }
+} */
+
+@media (max-width: 900px) {
+    .about-me-h1 {
+        font-size: 6.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me-section {
+        /* width: 80%; */
+        padding: 10px;
+        margin: auto;
+    }
+
+    .about-me-h1 {
+        margin: auto;
+        font-size: 7.25rem;
+        line-height: 1;
+    }
+
+    .about-me-pic {
+        visibility: hidden;
+        /* width: 200px; */
+        /* width: 80%;
+        aspect-ratio: auto;
+        transform: rotate(0deg);
+        margin: auto; */
+        /* position: relative;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5); */
+    }
+
+    .about-me-h3 {
+        /* margin: 30px 10px 10px 10px; */
+        margin: 0px;
+        /* position: relative; */
+        text-align: left;
+    }
+
+    .about-me-text-div {
+        margin-top: 30px;
+        display: grid;
+    }
+
+    .about-me-text-col {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .about-me-text-col-left {
+        margin: auto;
+    }
+
+    .about-me-text-col-right {
+        margin: 30px auto;
+    }
+
+    .about-me-button {
+        visibility: hidden;
+    }
+
+    .about-me-button-m {
+        visibility: visible;
+        display: inline-block;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 12px 22px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        margin-top: 20px;
+    }
+}
+
+/* 
+@media (max-width: 1800px) {
+    .about-me-h1 {
+        font-size: 10.5rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .about-me-h1 {
+        font-size: 10.5rem;
+    }
+}
+
+@media (max-width: 2560px) {
+    .about-me-h1 {
+        font-size: 10.5rem;
+    }
+}
+
+@media (max-width: 3840px) {
+    .about-me-h1 {
+        font-size: 10.5rem;
+    }
+} */
+
+@media (max-width: 768px) {
     .about-me-container {
         margin: auto;
         width: 100%;
@@ -1137,7 +1436,7 @@ nav .fa {
         bottom: 25%;
         left: 25%;
     }
-    
+
     .about-me-btn:hover {
         border: 1px solid #000;
         color: #000;
@@ -1157,7 +1456,8 @@ nav .fa {
     .about-me-footer {
         display: grid;
         position: relative;
-        opacity: 0; /* Hide as long as it is crap */
+        /* opacity: 0; */
+        /* Hide as long as it is crap */
     }
 
     .about-me-footer img {
@@ -1166,7 +1466,7 @@ nav .fa {
         margin: auto;
         padding-bottom: 20px;
     }
-    
+
 }
 
 /***********  PORTFOLIO PAGE ***********/
@@ -1316,14 +1616,14 @@ nav .fa {
 }
 
 @media (max-width: 1352px) {
-    .portfolio-color-typo-cont h3{
+    .portfolio-color-typo-cont h3 {
         font-size: 1.4rem;
         font-weight: 200;
         text-align: left;
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .portfolio-page-container {
         /* max-width: 1920px;
         width: 80%;
@@ -1364,7 +1664,7 @@ nav .fa {
         width: 100%;
         position: relative;
     }
-    
+
     .portfolio-page-cell-container img {
         width: 100%;
         height: auto;
@@ -1489,7 +1789,7 @@ nav .fa {
     display: grid;
 }
 
-@media(max-width: 1600px) {
+@media (max-width: 1600px) {
     .dot {
         height: 30px;
         width: 30px;
@@ -1559,4 +1859,8 @@ nav .fa {
     transition: 0.5s;
     font-size: calc(var(--fs-p) + 0.05rem);
     cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
 }
