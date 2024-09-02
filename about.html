@@ -16,7 +16,8 @@
 </head>
 
 <body class="about-me-body">
-    <nav id="navbar" class="navbar-small">
+    <!-- Current navbar -->
+    <!-- <nav id="navbar" class="navbar-small">
         <div class="nav-inner">
             <a href="index.html"><img src="images/logo_cb_white.png" alt="logo"></a>
             <div class="nav-links small-text" id="navLinks">
@@ -30,16 +31,31 @@
             </div>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
+    </nav> -->
+    <!-- END OF CURRENT NAVBAR -->
 
-    <section class="about-me-section" style="margin-bottom: 100px; overflow: auto;">
+    <!-- New navbar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="images/logo_cb_white_150.png" alt="logo"></a>
+        <div class="navlinks" id="myNavlinks">
+            <a href="index.html" class="p-right">Home</a>
+            <a href="#" class="p-right">About</a>
+            <a href="index.html#portfolio" class="p-right">Portfolio</a>
+            <a href="index.html#contact-me">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <i class="fa fa-bars fa-lg"></i>
+        </a>
+    </div>
+    <!-- END OF NEW NAVBAR -->
+
+    <section class="about-me-section" style="margin-top: 50px; margin-bottom: 100px; overflow: auto;">
         <div class="container">
             <div class="about-me-container" id="parent">
                 <div class="about-me-text-container" style="background-color: none;">
                     <div style="height: auto; width: auto; display: grid; position: relative;">
-                        <h1 class="about-me-h1">
-                            About me</h1>
-                        <img loading="lazy" src="images/cb_bw.jpg" alt="" class="about-me-pic">
+                        <h1 class="about-me-h1">About me</h1>
+                        <img src="images/cb_bw_500.jpg" alt="" class="about-me-pic">
                     </div>
                     <div style="width: 50%; position: relative; text-align: center; margin: auto 0px auto auto">
                         <a href="doc/cv.pdf" class="about-me-button small-text"
@@ -101,7 +117,7 @@
     </section>
     <footer class="about-me-footer small-text">
         <div class="portfolio-page-footer-container">
-            <img src="images/logo_cb_white.png" alt="logo">
+            <img src="images/logo_cb_white_300.png" alt="logo">
             <div class="portfolio-page-footer-inner-container-content">
                 <div class="portfolio-page-footer-inner-container">
                     <a href="tel:+46766728955" style="margin-bottom: 10px;">

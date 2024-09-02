@@ -1,25 +1,25 @@
 // Header animation
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        document.getElementById("textbox").classList.add("show-slow");
-    }, 500);
-});
+// window.addEventListener("load", function () {
+//     setTimeout(function () {
+//         document.getElementById("textbox").classList.add("show-slow");
+//     }, 500);
+// });
 
 // Skills section
 const card = document.getElementById('card');
 
 const parentObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      document.getElementById('cardImg').classList.add('fade-in');
-      document.getElementById('cardImg2').classList.add('fade-in');
-      document.getElementById('cardImg3').classList.add('fade-in');
-    }
-  });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.getElementById('cardImg').classList.add('fade-in');
+            document.getElementById('cardImg2').classList.add('fade-in');
+            document.getElementById('cardImg3').classList.add('fade-in');
+        }
+    });
 },
-options = {
-    threshold: 0.5,
-});
+    options = {
+        threshold: 0.5,
+    });
 
 // Start observing the parent element
 parentObserver.observe(card);
@@ -39,13 +39,22 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Minimize navbar
-window.onscroll = function() {
+// window.onscroll = function() {
+//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
+//         document.getElementById("navBar").classList.add('navbar-small');
+//     } else {
+//         document.getElementById("navBar").classList.remove('navbar-small');
+//     }
+//  };
+
+// Minimize navbar
+window.onscroll = function () {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
-        document.getElementById("navBar").classList.add('navbar-small');
+        document.getElementById("myTopnav").classList.remove('topnav-big');
     } else {
-        document.getElementById("navBar").classList.remove('navbar-small');
+        document.getElementById("myTopnav").classList.add('topnav-big');
     }
- };
+};
 
 //  Mobile menu
 var navLinks = document.getElementById("navLinks")
@@ -99,12 +108,12 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 function buildThresholdList() {
     let thresholds = [];
     let numSteps = 100;
-  
+
     for (let i = 1.0; i <= numSteps; i++) {
-      let ratio = i / numSteps;
-      thresholds.push(ratio);
+        let ratio = i / numSteps;
+        thresholds.push(ratio);
     }
-  
+
     thresholds.push(0);
     return thresholds;
 }

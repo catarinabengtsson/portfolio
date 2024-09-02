@@ -12,10 +12,25 @@ function hideMenu() {
 function toggleMenu() {
     var x = document.getElementById("navLinks");
     if (x.style.display === "block") {
-        console.log("block");
         x.style.display = "none";
     } else {
-        console.log("else");
         x.style.display = "block";
+    }
+}
+
+function mobileMenu() {
+    var x = document.getElementById("myTopnav");
+    var y = document.getElementById("myNavlinks");
+
+    if (x.className === "topnav" || x.className === "topnav topnav-big") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+
+    if (y.className === "navlinks") {
+        y.className += " responsive";
+    } else {
+        y.className = "navlinks";
     }
 }
