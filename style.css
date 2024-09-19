@@ -79,9 +79,10 @@
         --content-max-width: 1229px;
         /* --fs-p: 0.8rem; */
         --fs-p: 0.9rem;
-        --fs-h1: 3.1rem;
-        --fs-h2: 2rem;
-        --fs-h3: 1.28rem;
+        /* --fs-h1: 3.1rem; */
+        --fs-h1: 4.5rem;
+        --fs-h2: 3rem;
+        --fs-h3: 2rem;
         --fs-h4: 1.12rem;
         --fs-h5: 0.96rem;
         /* --fs-small: 0.72rem; */
@@ -127,6 +128,22 @@
         /* --fs-p: 1rem;
         --fs-h1: 3.875rem;
         --fs-h2: 2.5rem;
+        --fs-h3: 1.6rem;
+        --fs-h4: 1.4rem;
+        --fs-h5: 1.2rem;
+        --fs-small: 0.9rem; */
+        --shape-offset: -7.5%;
+    }
+}
+
+/* 1280x720 (80% = 1024) */
+@media (max-width: 900px) {
+    :root {
+        --content-max-width: 720px;
+        /* --fs-p: 1rem; */
+        /* --fs-h1: 3.875rem; */
+        --fs-h1: 3rem;
+        /* --fs-h2: 2.5rem;
         --fs-h3: 1.6rem;
         --fs-h4: 1.4rem;
         --fs-h5: 1.2rem;
@@ -270,6 +287,16 @@ img {
     padding-left: 3px;
     font-weight: 300;
     font-size: 1.7rem;
+    color: #d1d1d1;
+    opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+    .header h2 {
+        font-size: 1.7rem;
+        color: inherit;
+        opacity: 1;
+    }
 }
 
 /* Nav bar */
@@ -288,7 +315,7 @@ nav {
 }
 
 nav img {
-    width: 107px;
+    width: 95px;
     aspect-ratio: 1/1;
     transition: 1s;
 }
@@ -367,7 +394,7 @@ nav .fa {
     transition: 1s;
 
     background-color: rgba(05, 05, 05, 0.45);
-    padding: 8px 10%;
+    padding: 8px 10% 2px 10%;
 }
 
 .topnav img {
@@ -380,7 +407,7 @@ nav .fa {
     /* overflow: hidden;
     width: 80%; */
     background: none;
-    padding: 18px 10%;
+    padding: 10px 10%;
     /* display: flex;
     position: fixed;
     z-index: 1; */
@@ -388,7 +415,7 @@ nav .fa {
 }
 
 .topnav-big img {
-    width: 107px;
+    width: 95px;
     aspect-ratio: 1 / 1;
     transition: 1s;
 }
@@ -556,7 +583,8 @@ nav .fa {
 }
 
 .textbox {
-    width: 30%;
+    /* width: 30%; */
+    width: 40%;
     margin: auto;
     color: #f1e9de;
     position: absolute;
@@ -567,7 +595,8 @@ nav .fa {
 .textbox h1 {
     letter-spacing: 2px;
     /* line-height: 72px; */
-    line-height: calc(1.15*var(--fs-h1));
+    /* line-height: calc(1.15*var(--fs-h1)); */
+    line-height: calc(1.1*var(--fs-h1));
 }
 
 .textbox p {
@@ -810,6 +839,17 @@ nav .fa {
     padding-top: 40%;
 }
 
+.portfolio-row-img {
+    transform: scale(1);
+    transition: linear 0.5s;
+    /* transition-property: transform; */
+}
+
+.portfolio-row-img:hover {
+    transform: scale(1.1);
+    transition: linear 0.5s;
+}
+
 .portfolio-row-text {
     /* height: 550px; */
     width: 50%;
@@ -834,6 +874,7 @@ nav .fa {
     height: 100%;
     width: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio-container img {
@@ -852,6 +893,48 @@ nav .fa {
     display: flex;
     position: absolute;
 }
+
+.von_parent {
+    position: relative;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    /* display: grid; */
+    /* top: 0;
+    left: 0; */
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image2 {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+.scrib-anim {
+    /* @keyframes duration | easing-function | delay |
+    iteration-count | direction | fill-mode | play-state | name */
+    animation: 3s ease-out 3s fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
 
 @media (max-width: 768px) {
     .portfolio-row {
@@ -954,7 +1037,13 @@ nav .fa {
 .slide-up {
     /* @keyframes duration | easing-function | delay |
     iteration-count | direction | fill-mode | play-state | name */
-    animation: 1s ease-in 0s slide-in;
+    animation: 1s ease-out 0s slide-in;
+}
+
+.slide-up2 {
+    /* @keyframes duration | easing-function | delay |
+    iteration-count | direction | fill-mode | play-state | name */
+    animation: 1s ease-out 0.5s slide-in;
 }
 
 .fade-in {
@@ -1015,7 +1104,7 @@ nav .fa {
 
 .layer:hover {
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
 }
 
 .layer h3 {
@@ -1023,6 +1112,7 @@ nav .fa {
     opacity: 0;
     transition: 0.75s;
     transform: translateY(60%);
+    font-size: 1.5rem;
 }
 
 .layer:hover h3 {
@@ -1351,7 +1441,8 @@ nav .fa {
 
     /* @keyframes duration | easing-function | delay |
     iteration-count | direction | fill-mode | play-state | name */
-    animation: 1s ease-in 0s slide-in;
+    animation: 1s ease-out 0s slide-in;
+    animation-fill-mode: none;
     /* animation-timeline: view(); */
 }
 
@@ -1807,6 +1898,11 @@ nav .fa {
 .reworn-gradient {
     background: linear-gradient(#000000, #F7BC25, #FBD95B, #FCE48C, #FDECAD, #FFFFFF);
 }
+
+.von-fashion-gradient {
+    background: linear-gradient(#000000, #EAE7E3);
+}
+
 
 @media (max-width: 1352px) {
     .portfolio-color-typo-cont h3 {

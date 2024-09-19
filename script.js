@@ -1,10 +1,3 @@
-// Header animation
-// window.addEventListener("load", function () {
-//     setTimeout(function () {
-//         document.getElementById("textbox").classList.add("show-slow");
-//     }, 500);
-// });
-
 // Skills section
 const card = document.getElementById('card');
 
@@ -39,17 +32,9 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Minimize navbar
-// window.onscroll = function() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
-//         document.getElementById("navBar").classList.add('navbar-small');
-//     } else {
-//         document.getElementById("navBar").classList.remove('navbar-small');
-//     }
-//  };
-
-// Minimize navbar
 window.onscroll = function () {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
+    // if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.scrollY > 80) {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 || window.scrollY > 60) {
         document.getElementById("myTopnav").classList.remove('topnav-big');
     } else {
         document.getElementById("myTopnav").classList.add('topnav-big');
@@ -61,27 +46,11 @@ var navLinks = document.getElementById("navLinks")
 
 function showMenu() {
     navLinks.style.right = "0";
-    // navLinks.style.top = "0";
 }
 
 function hideMenu() {
     navLinks.style.right = "-200px";
-    // navLinks.style.top = "-300px";
 }
-
-// Scale footer image
-// var toggleIcon = false;
-
-// function scaleFunction() {
-//     if (!toggleIcon) {
-//         document.getElementById("footer-logo").classList.remove('pos-2');
-//         document.getElementById("footer-logo").classList.add('pos-1');
-//     } else {
-//         document.getElementById("footer-logo").classList.remove('pos-1');
-//         document.getElementById("footer-logo").classList.add('pos-2');
-//     }
-//     toggleIcon = !toggleIcon;
-// }
 
 const observer2 = new IntersectionObserver((entries) => {
     const logoElement = document.getElementById('footer-logo') // best to save reference to this element so DOM query is only required once
@@ -117,11 +86,3 @@ function buildThresholdList() {
     thresholds.push(0);
     return thresholds;
 }
-
-// DEBUG
-// console.log("Initial window.innerWidth ", window.innerWidth);
-// console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
-// window.onresize = function() {
-//     console.log("onresize: window.innerWidth ", window.innerWidth);
-//     console.log("--content-max-width ", getComputedStyle(document.documentElement).getPropertyValue('--content-max-width'));
-// };

@@ -1,10 +1,3 @@
-// Header animation
-// window.addEventListener("load", function() {
-//     setTimeout(function() {
-//         document.getElementById("signature").classList.add('show');
-//       }, 2500);
-// });
-
 setTimeout(function () {
     const hiddenElements = document.querySelectorAll('.anchor');
     hiddenElements.forEach((el) => observer.observe(el));

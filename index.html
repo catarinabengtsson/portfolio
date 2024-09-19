@@ -22,23 +22,6 @@
 <body>
     <main>
         <section class="header">
-            <!-- <nav id="navBar">
-                <div class="nav-inner">
-                    <a href="index.html"><img src="images/logo_cb_white.png" alt="logo"></a>
-                    <div class="nav-links" id="navLinks">
-                        <i class="fa fa-times" onclick="hideMenu()"></i>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact-me">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav> -->
-
-            <!-- New navbar -->
             <div class="topnav topnav-big" id="myTopnav">
                 <a href="index.html"><img src="images/logo_cb_white_150.png" alt="logo"></a>
                 <div class="navlinks" id="myNavlinks">
@@ -51,11 +34,9 @@
                     <i class="fa fa-bars fa-lg"></i>
                 </a>
             </div>
-            <!-- END OF NEW NAVBAR -->
 
             <div class="container">
                 <div class="header-cont">
-                    <!-- <div class="textbox hidden2" id="textbox"> -->
                     <div class="textbox slide-up" id="textbox">
                         <h1>CATARINA<br>BENGTSSON</h1>
                         <h2>Designer</h2>
@@ -128,15 +109,16 @@
                 <!-- First row -->
                 <div class="portfolio-row hidden down">
                     <div class="portfolio-container">
-                        <!-- <img src="images/reworn/reworn.png" alt="reworn.png"> -->
-                        <img src="images/reworn/reworn.png"
-                            srcset="images/reworn/reworn_1000.png 1000w, images/reworn/reworn_800.png 800w, images/reworn/reworn_600.png 600w"
-                            sizes="50vw" alt="Reworn logo">
-                        <a href="reworn.html">
-                            <div class="layer">
-                                <h3>Read more about <br> Reworn</h3>
-                            </div>
-                        </a>
+                        <div class="portfolio-row-img">
+                            <img src="images/reworn/reworn.png"
+                                srcset="images/reworn/reworn_1000.png 1000w, images/reworn/reworn_800.png 800w, images/reworn/reworn_600.png 600w"
+                                sizes="50vw" alt="Reworn logo">
+                            <a href="reworn.html">
+                                <div class="layer">
+                                    <h3>Read more about <br> Reworn</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="portfolio-row-text layer-small">
                         <h3 style="margin-bottom: 10px;">Reworn</h3>
@@ -167,30 +149,32 @@
                         </div>
                     </div>
                     <div class="portfolio-container">
-                        <!-- <img src="images/avignon/avignon.png" alt="avignon.png"> -->
-                        <img src="images/avignon/avignon.png"
-                            srcset="images/avignon/avignon_1000.png 1000w, images/avignon/avignon_800.png 800w, images/avignon/avignon_600.png 600w"
-                            sizes="50vw" alt="Avignon logo">
-                        <a href="avignon.html">
-                            <div class="layer">
-                                <h3>Read more about <br> Avignon</h3>
-                            </div>
-                        </a>
+                        <div class="portfolio-row-img">
+                            <img src="images/avignon/avignon.png"
+                                srcset="images/avignon/avignon_1000.png 1000w, images/avignon/avignon_800.png 800w, images/avignon/avignon_600.png 600w"
+                                sizes="50vw" alt="Avignon logo">
+                            <a href="avignon.html">
+                                <div class="layer">
+                                    <h3>Read more about <br> Avignon</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Third row -->
                 <div class="portfolio-row hidden down">
                     <div class="portfolio-container">
-                        <!-- <img src="images/narva/narva.png" alt="narva.png"> -->
-                        <img src="images/narva/narva.png"
-                            srcset="images/narva/narva_1000.png 1000w, images/narva/narva_800.png 800w, images/narva/narva_600.png 600w"
-                            sizes="50vw" alt="Narva logo">
-                        <a href="narva.html">
-                            <div class="layer">
-                                <h3>Read more about <br> Narva</h3>
-                            </div>
-                        </a>
+                        <div class="portfolio-row-img">
+                            <img src="images/narva/narva.png"
+                                srcset="images/narva/narva_1000.png 1000w, images/narva/narva_800.png 800w, images/narva/narva_600.png 600w"
+                                sizes="50vw" alt="Narva logo">
+                            <a href="narva.html">
+                                <div class="layer">
+                                    <h3>Read more about <br> Narva</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="portfolio-row-text layer-small">
                         <h3 style="margin-bottom: 10px;">Narva</h3>
@@ -217,15 +201,14 @@
                         </div>
                     </div>
                     <div class="portfolio-container">
-                        <!-- <img src="images/gideon/gideon.png" alt="gideon.png"> -->
-                        <img src="images/gideon/gideon.png"
-                            srcset="images/gideon/gideon_1000.png 1000w, images/gideon/gideon_800.png 800w, images/gideon/gideon_600.png 600w"
-                            sizes="50vw" alt="Gideon logo">
-                        <a>
+                        <div class="portfolio-row-img">
+                            <img src="images/gideon/gideon.png"
+                                srcset="images/gideon/gideon_1000.png 1000w, images/gideon/gideon_800.png 800w, images/gideon/gideon_600.png 600w"
+                                sizes="50vw" alt="Gideon logo">
                             <div class="layer">
-                                <h3>Gideon comming soon</h3>
+                                <h3>Coming soon</h3>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
